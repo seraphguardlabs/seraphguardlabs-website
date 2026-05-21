@@ -1,0 +1,6 @@
+{
+  "name": "Seraph Guard Labs",
+  "description": "Building technologies that protect and empower humanity in the digital age. Discover our ethical AI initiatives including Guardian AI, SeraphPlay, and GuardianX.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
