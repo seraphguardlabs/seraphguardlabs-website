@@ -79,9 +79,9 @@ export const SERAPH_DATA: WebsiteContent = {
     list: [
       {
         id: "guardian-ai",
-        name: "Guardian AI",
+        name: "Guardien AI",
         tagline: "AI-powered digital protection for children.",
-        description: "An on-device AI system designed to protect and empower children in the digital age. Guardian AI helps safeguard young users from harmful content exposure, addictive platform behavior, online exploitation, predatory interactions, and emotional wellbeing risks — while preserving privacy through intelligent on-device processing.",
+        description: "An on-device AI system designed to protect and empower children in the digital age. Guardien AI helps safeguard young users from harmful content exposure, addictive platform behavior, online exploitation, predatory interactions, and emotional wellbeing risks — while preserving privacy through intelligent on-device processing.",
         focusAreas: [
           "Child digital safety",
           "Emotional wellbeing",
