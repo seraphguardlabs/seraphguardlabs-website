@@ -58,7 +58,7 @@ export default function Navbar({ onContactClick }: NavbarProps) {
             className="flex items-center gap-2.5 group"
           >
             <div className="relative flex items-center justify-center w-40 h-auto rounded-lg overflow-hidden hover:scale-105 transition-all duration-300">
-              <img src="/logo.webp" alt="SeraphGuard Labs" className="w-full h-auto object-contain" />
+              <img src="/logo.webp" alt="SeraphGuard Labs" width={160} height={40} className="w-full h-auto object-contain" />
             </div>
           </a>
 

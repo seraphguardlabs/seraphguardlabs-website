@@ -35,13 +35,13 @@ export default function Initiatives() {
   const getInitiativeImage = (id: string) => {
     switch (id) {
       case "guardian-ai":
-        return "/guardian-ai.png"; // Child/family safety tech
+        return "/guardian-ai.webp"; // Child/family safety tech
       case "seraph-play":
-        return "/seraph-play.png"; // Wellbeing/Movement
+        return "/seraph-play.webp"; // Wellbeing/Movement
       case "guardian-x":
-        return "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"; // Digital Security
+        return "/unsplash-init-1.webp"; // Digital Security
       default:
-        return "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80";
+        return "/unsplash-init-2.webp";
     }
   };
 

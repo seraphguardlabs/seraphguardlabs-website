@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="space-y-3.5 max-w-md">
             <div className="flex items-center gap-2.5">
               <div className="relative flex items-center justify-center w-32 h-auto rounded-lg overflow-hidden">
-                <img src="/logo.webp" alt="SeraphGuard Labs" className="w-full h-auto object-contain" />
+                <img src="/logo.webp" alt="SeraphGuard Labs" width={128} height={32} loading="lazy" className="w-full h-auto object-contain" />
               </div>
             </div>
             <p className="text-sm text-slate-405 font-light leading-relaxed">

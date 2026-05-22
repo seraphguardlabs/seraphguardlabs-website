@@ -49,7 +49,7 @@ export default function WhyWeExist() {
             <div className="relative w-full aspect-square sm:aspect-[4/3] xl:aspect-square rounded-3xl bg-slate-900 border border-white/10 overflow-hidden shadow-2xl shadow-black/40 group">
               {/* Image Placeholder Background / Unsplash Image */}
               <img 
-                src="/why-we-exist.jpeg"
+                src="/why-we-exist.webp"
                 alt="Technology intersecting with humanity"
                 className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60 group-hover:scale-105 transition-transform duration-700 ease-in-out"
               />

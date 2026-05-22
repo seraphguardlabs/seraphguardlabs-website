@@ -69,7 +69,7 @@ export default function Vision() {
             {/* Layout-Optimized Image Container */}
             <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-xl mt-8">
               <img 
-                src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                src="/unsplash-vision.webp" 
                 alt="Digital Infrastructure" 
                 className="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-lighten hover:scale-105 transition-transform duration-700"
               />

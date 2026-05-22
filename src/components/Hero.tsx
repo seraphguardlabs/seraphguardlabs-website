@@ -95,7 +95,7 @@ export default function Hero({ onExploreClick, onContactClick }: HeroProps) {
               
               <div className="flex items-center gap-4 border-t border-white/10 pt-6">
                 <div className="shrink-0 w-12 h-12 rounded-full border border-white/15 shadow-inner flex items-center justify-center text-xs font-mono font-bold text-slate-400 select-none overflow-hidden relative bg-[#091024]">
-                  <img src="/nevin.jpg" alt="Nevin Robert" className="w-full h-full object-cover hidden" onLoad={(e) => {
+                  <img src="/nevin.jpg" alt="Nevin Robert" width={48} height={48} loading="lazy" className="w-full h-full object-cover hidden" onLoad={(e) => {
                     e.currentTarget.classList.remove('hidden');
                     e.currentTarget.nextElementSibling?.classList.add('hidden');
                   }} />

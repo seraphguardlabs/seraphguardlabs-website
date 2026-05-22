@@ -1,13 +1,14 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import WhyWeExist from "./components/WhyWeExist";
-import Initiatives from "./components/Initiatives";
-import Vision from "./components/Vision";
-import Principles from "./components/Principles";
-import Team from "./components/Team";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+
+const WhyWeExist = React.lazy(() => import("./components/WhyWeExist"));
+const Initiatives = React.lazy(() => import("./components/Initiatives"));
+const Vision = React.lazy(() => import("./components/Vision"));
+const Principles = React.lazy(() => import("./components/Principles"));
+const Team = React.lazy(() => import("./components/Team"));
+const Contact = React.lazy(() => import("./components/Contact"));
+const Footer = React.lazy(() => import("./components/Footer"));
 
 export default function App() {
   const handleScrollTo = (id: string) => {
@@ -31,28 +32,32 @@ export default function App() {
           onContactClick={() => handleScrollTo("#contact")}
         />
 
-        {/* Foundations Pillar */}
-        <WhyWeExist />
+        <Suspense fallback={<div className="h-32"></div>}>
+          {/* Foundations Pillar */}
+          <WhyWeExist />
 
-        {/* Flagship Stream Selector */}
-        <Initiatives />
+          {/* Flagship Stream Selector */}
+          <Initiatives />
 
-        {/* Strategic Roadmapping Pillar */}
-        <Vision />
+          {/* Strategic Roadmapping Pillar */}
+          <Vision />
 
-        {/* Ethical Engineering Directives */}
-        <Principles />
+          {/* Ethical Engineering Directives */}
+          <Principles />
 
-        {/* Leadership Profile */}
-        <Team />
+          {/* Leadership Profile */}
+          <Team />
 
-        {/* Interactive Ingress Portal */}
-        <Contact />
+          {/* Interactive Ingress Portal */}
+          <Contact />
+        </Suspense>
 
       </main>
 
       {/* 3. Trademark Institutional Footer */}
-      <Footer />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }
