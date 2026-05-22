@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Mail, Linkedin, Copy, Check, Send, Sparkles, MessageSquare } from "lucide-react";
+import { Mail, Linkedin, Copy, Check, Send } from "lucide-react";
 import { SERAPH_DATA } from "../data";
 
 export default function Contact() {
@@ -7,7 +7,6 @@ export default function Contact() {
     name: "",
     email: "",
     organization: "",
-    subject: "partnership",
     message: "",
   });
 
@@ -60,7 +59,6 @@ export default function Contact() {
         name: "",
         email: "",
         organization: "",
-        subject: "partnership",
         message: "",
       });
     }, 1500);
@@ -92,7 +90,7 @@ export default function Contact() {
               
               {/* Copied Email Button */}
               <div className="flex flex-col gap-2">
-                <span className="font-mono text-[10px] uppercase font-bold tracking-widest text-slate-500">Official Communication Vector</span>
+                <span className="font-mono text-[10px] uppercase font-bold tracking-widest text-slate-500">Email</span>
                 <div className="flex items-center gap-2 p-1.5 bg-slate-950/60 border border-white/10 rounded-xl relative group">
                   <a href={`mailto:${SERAPH_DATA.contact.email}`} className="flex items-center gap-3 px-3 py-1.5 min-w-0 flex-1 hover:opacity-80 transition-opacity">
                     <Mail className="w-5 h-5 text-blue-400 shrink-0" />
@@ -119,7 +117,7 @@ export default function Contact() {
 
               {/* LinkedIn Connect Button */}
               <div className="flex flex-col gap-2 pt-2">
-                <span className="font-mono text-[10px] uppercase font-bold tracking-widest text-slate-500">Institutional Registry</span>
+                <span className="font-mono text-[10px] uppercase font-bold tracking-widest text-slate-500">LinkedIn</span>
                 <a
                   id="contact-linkedin-btn"
                   href="https://www.linkedin.com/company/seraphguard-labs/"
@@ -151,8 +149,8 @@ export default function Contact() {
 
                   <div className="space-y-2">
                     <h3 className="font-display text-2xl font-bold text-white">Message Sent</h3>
-                    <p className="font-sans text-sm sm:text-base text-slate-350 max-w-md mx-auto leading-relaxed font-light">
-                      Thank you for reaching out to SeraphGuard Labs. Our research operations team will review your details and respond back to <span className="text-white hover:underline">{SERAPH_DATA.contact.email}</span> shortly.
+                    <p className="font-sans text-sm sm:text-base text-slate-300 max-w-md mx-auto leading-relaxed font-light">
+                      Thank you for reaching out to SeraphGuard Labs. We will review your details and respond back to you shortly.
                     </p>
                   </div>
 
@@ -167,14 +165,6 @@ export default function Contact() {
               ) : (
                 /* Interactive Form Section */
                 <form id="contact-inquiry-form" onSubmit={handleSubmit} className="space-y-5">
-                  <div className="border-b border-white/10 pb-3.5 mb-2 flex items-center justify-between">
-                    <span className="font-mono text-[9px] uppercase font-bold tracking-widest text-[#94a3b8] flex items-center gap-1.5">
-                      <Sparkles className="w-3.5 h-3.5 text-blue-400 animate-pulse" />
-                      Digital Ingress Point
-                    </span>
-                    <span className="font-mono text-[8px] text-slate-500 uppercase">SYS SECURED</span>
-                  </div>
-
                   {errorMsg && (
                     <div className="p-3.5 rounded-lg bg-rose-500/10 border border-rose-500/20 text-xs text-rose-400 font-semibold">
                       {errorMsg}
@@ -217,52 +207,26 @@ export default function Contact() {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    {/* Organization input */}
-                    <div className="space-y-2">
-                      <label htmlFor="form-organization" className="font-mono text-[10px] uppercase text-slate-400 font-bold tracking-wider">
-                        Organization
-                      </label>
-                      <input
-                        id="form-organization"
-                        type="text"
-                        name="organization"
-                        value={formData.organization}
-                        onChange={handleChange}
-                        placeholder="Research Institute / Lab"
-                        className="w-full bg-[#091024]/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500 hover:border-white/20 transition-all"
-                      />
-                    </div>
-
-                    {/* Subject selection */}
-                    <div className="space-y-2">
-                      <label htmlFor="form-subject" className="font-mono text-[10px] uppercase text-slate-400 font-bold tracking-wider">
-                        Topic of Engagement
-                      </label>
-                      <div className="relative">
-                        <select
-                          id="form-subject"
-                          name="subject"
-                          value={formData.subject}
-                          onChange={handleChange}
-                          className="w-full bg-[#091024]/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-slate-150 focus:outline-none focus:border-blue-500 hover:border-white/20 transition-all appearance-none cursor-pointer"
-                        >
-                          <option value="partnership" className="bg-[#040815] text-white">Research Partnership</option>
-                          <option value="collaboration" className="bg-[#040815] text-white">Child Safety Collaboration</option>
-                          <option value="ethics" className="bg-[#040815] text-white">Ethical AI Frameworks</option>
-                          <option value="general" className="bg-[#040815] text-white">General Inquiries</option>
-                        </select>
-                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
-                          <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                        </div>
-                      </div>
-                    </div>
+                  {/* Organization input */}
+                  <div className="space-y-2">
+                    <label htmlFor="form-organization" className="font-mono text-[10px] uppercase text-slate-400 font-bold tracking-wider">
+                      Organization
+                    </label>
+                    <input
+                      id="form-organization"
+                      type="text"
+                      name="organization"
+                      value={formData.organization}
+                      onChange={handleChange}
+                      placeholder="Research Institute / Lab"
+                      className="w-full bg-[#091024]/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500 hover:border-white/20 transition-all"
+                    />
                   </div>
 
                   {/* Message field */}
                   <div className="space-y-2">
                     <label htmlFor="form-message" className="font-mono text-[10px] uppercase text-slate-400 font-bold tracking-wider">
-                      Communication Message payload *
+                      Message *
                     </label>
                     <textarea
                       id="form-message"
