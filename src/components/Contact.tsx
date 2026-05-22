@@ -154,7 +154,7 @@ export default function Contact() {
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="font-display text-2xl font-bold text-white">Message Transmitted</h3>
+                    <h3 className="font-display text-2xl font-bold text-white">Message Sent</h3>
                     <p className="font-sans text-sm sm:text-base text-slate-350 max-w-md mx-auto leading-relaxed font-light">
                       Thank you for reaching out to SeraphGuard Labs. Our research operations team will review your details and respond back to <span className="text-white hover:underline">{SERAPH_DATA.contact.email}</span> shortly.
                     </p>
@@ -165,7 +165,7 @@ export default function Contact() {
                     onClick={() => setIsSuccess(false)}
                     className="px-5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/10 transition-all font-mono cursor-pointer"
                   >
-                    TRANSMIT NEW INQUIRY
+                    SEND NEW INQUIRY
                   </button>
                 </div>
               ) : (
@@ -290,11 +290,11 @@ export default function Contact() {
                     {isSubmitting ? (
                       <>
                         <span className="animate-spin h-4 w-4 border-2 border-white/35 border-t-white rounded-full mr-1.5" />
-                        TRANSMITTING...
+                        Sending...
                       </>
                     ) : (
                       <>
-                        TRANSMIT PAYLOAD
+                        Send Now
                         <Send className="w-4 h-4 text-blue-100" />
                       </>
                     )}
