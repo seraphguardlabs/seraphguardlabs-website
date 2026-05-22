@@ -59,9 +59,9 @@ export default function Hero({ onExploreClick, onContactClick }: HeroProps) {
               id="hero-title"
               className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.1]"
             >
-              Protecting humanity in the{" "}
+              Protecting & Empowering Humanity in the{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-450 via-cyan-400 to-blue-350">
-                digital age.
+                digital Age
               </span>
             </h1>
 

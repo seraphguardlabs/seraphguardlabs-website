@@ -35,7 +35,7 @@ export default function Initiatives() {
   const getInitiativeImage = (id: string) => {
     switch (id) {
       case "guardian-ai":
-        return "/guardian-ai.webp"; // Child/family safety tech
+        return "/guardienai.png"; // Child/family safety tech
       case "seraph-play":
         return "/seraph-play.webp"; // Wellbeing/Movement
       case "guardian-x":

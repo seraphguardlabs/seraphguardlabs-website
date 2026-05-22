@@ -1,5 +1,5 @@
 import React from "react";
-import { Users, Linkedin, Briefcase, Award, GraduationCap } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { SERAPH_DATA } from "../data";
 
 export default function Team() {
@@ -49,15 +49,21 @@ export default function Team() {
               </div>
 
               {/* Little Floating Badge */}
-              <div className="absolute -bottom-2 -right-2 p-1.5 rounded-lg bg-blue-600 text-white flex items-center justify-center shadow-lg">
+              <a
+                href="https://www.linkedin.com/in/nevin-robert/"
+                target="_blank"
+                rel="noreferrer"
+                className="absolute -bottom-2 -right-2 p-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center shadow-lg transition-colors cursor-pointer"
+                aria-label="LinkedIn Profile"
+              >
                 <Linkedin className="w-4 h-4 fill-current text-white" />
-              </div>
+              </a>
             </div>
 
             {/* Profile Details Block */}
             <div className="flex-1 space-y-6 text-center md:text-left">
               <div className="space-y-1.5">
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-2">
+                <div className="flex items-center justify-center md:justify-start gap-3">
                   <h3 className="font-display text-2xl sm:text-3xl font-extrabold text-white">
                     {member.name}
                   </h3>
@@ -66,10 +72,10 @@ export default function Team() {
                     href="https://www.linkedin.com/in/nevin-robert/"
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs text-blue-400 hover:text-white font-mono uppercase tracking-wider self-center md:self-auto group"
+                    className="text-blue-400 hover:text-white transition-colors flex items-center justify-center p-1 rounded hover:bg-white/5"
+                    aria-label="LinkedIn Profile"
                   >
-                    LinkedIn Profile
-                    <Linkedin className="w-3.5 h-3.5 text-blue-400 group-hover:text-white transition-colors" />
+                    <Linkedin className="w-4 h-4 fill-current" />
                   </a>
                 </div>
                 <p className="font-sans text-xs sm:text-sm font-semibold tracking-wider uppercase text-blue-300 font-mono">
@@ -80,29 +86,6 @@ export default function Team() {
               <p className="font-sans text-sm sm:text-base text-slate-300 leading-relaxed font-light">
                 {member.bio}
               </p>
-
-              {/* Highlights cards to enrich profile layout and give corporate context */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-white/10 pt-6">
-                <div className="flex items-start gap-3 text-left">
-                  <div className="p-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-405 mt-0.5">
-                    <Briefcase className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="font-mono text-[9px] uppercase tracking-wider text-slate-500 block">PREVIOUS ROLES</span>
-                    <span className="text-xs font-semibold text-slate-300">Chief of Staff, Nosh Robotics</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3 text-left">
-                  <div className="p-2 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 mt-0.5">
-                    <Award className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="font-mono text-[9px] uppercase tracking-wider text-slate-500 block">KEY FOCUS</span>
-                    <span className="text-xs font-semibold text-slate-300">Venture Capitals & Seed Operator</span>
-                  </div>
-                </div>
-              </div>
             </div>
 
           </div>

@@ -61,7 +61,7 @@ export interface WebsiteContent {
 export const SERAPH_DATA: WebsiteContent = {
   hero: {
     headline: "Protecting & Empowering Humanity in the Digital Age",
-    subheadline: "SeraphGuard Labs is building technologies for the next era of humanity. Our mission is to create safer, ethical, and highly capable systems designed around human wellbeing and digital protection.",
+    subheadline: "SeraphGuard Labs is building the technologies for the next era of humanity by creating safe, ethical, and highly capable Edge AI systems that protect and empower people in an increasingly cyber-driven world, without compromising privacy, security, or human well-being.",
     ctaPrimary: "Explore Our Work",
     ctaSecondary: "Contact Us",
   },
@@ -72,7 +72,7 @@ export const SERAPH_DATA: WebsiteContent = {
       "While digital systems hold enormous potential, they introduce profound risks to privacy, safety, and human wellbeing.",
       "We believe innovation must be fundamentally ethical and human-centered."
     ],
-    quote: "“The future needs systems intelligent enough to protect humanity.”",
+    quote: "The future of humanity will be shaped by artificial intelligence. As AI becomes embedded into the fabric of everyday life, the responsibility to build safe, ethical, and human-centered technologies has never been greater.\n\nAt Seraph Guard Labs, we believe the next generation of AI must protect privacy, preserve human dignity, and strengthen human potential. Our mission is to ensure AI becomes a force that advances humanity and not one that diminishes it.",
   },
   initiatives: {
     title: "Our Initiatives",
@@ -164,7 +164,7 @@ export const SERAPH_DATA: WebsiteContent = {
   contact: {
     title: "Let’s Build Safer Digital Futures Together",
     content: "We’re open to partnerships, research collaborations, institutional engagement, and conversations around ethical AI and digital safety.",
-    email: "hello@seraphguardlabs.com",
+    email: "tech@seraphguardlabs.com",
     linkedin: "SeraphGuard Labs"
   },
   footer: {
