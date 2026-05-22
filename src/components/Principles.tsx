@@ -102,11 +102,6 @@ export default function Principles() {
                     </p>
                   </div>
                 </div>
-
-                {/* Aesthetic index tag */}
-                <div className="pt-6 border-t border-white/10 mt-6 flex items-center justify-end font-mono text-[9px] text-slate-500 select-none">
-                  <span className="opacity-0 group-hover:opacity-100 transition-opacity text-blue-400">ACTIVE DIRECTIVE</span>
-                </div>
               </div>
             );
           })}

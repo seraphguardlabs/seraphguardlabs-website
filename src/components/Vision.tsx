@@ -70,10 +70,6 @@ export default function Vision() {
                 className="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-lighten hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-[#020617]/40 to-transparent" />
-              <div className="absolute bottom-4 left-4 flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-cyan-400" />
-                <span className="font-mono text-[10px] text-slate-300 uppercase tracking-widest">Trust Infrastructure</span>
-              </div>
             </div>
           </div>
 
