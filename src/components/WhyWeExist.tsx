@@ -16,10 +16,6 @@ export default function WhyWeExist() {
           {/* Left Column: Heading and Editorial Text (Lg: 7 Columns) */}
           <div className="lg:col-span-12 xl:col-span-7 space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 font-mono text-[10px] tracking-widest uppercase">
-                <HelpCircle className="w-3.5 h-3.5 text-blue-400" />
-                FOUNDATIONAL MOTIVATION
-              </div>
               <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight">
                 {SERAPH_DATA.whyWeExist.title}
               </h2>
@@ -59,13 +55,7 @@ export default function WhyWeExist() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/20 blur-3xl rounded-full" />
               <div className="absolute bottom-0 left-0 w-32 h-32 bg-cyan-500/20 blur-3xl rounded-full" />
               
-              {/* Content overlay inside image container */}
-              <div className="absolute bottom-6 left-6 right-6">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/50 backdrop-blur-md border border-white/10 text-white font-mono text-[10px] tracking-widest uppercase">
-                  <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-                  AI Alignment
-                </div>
-              </div>
+
             </div>
           </div>
 

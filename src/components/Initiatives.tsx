@@ -55,10 +55,6 @@ export default function Initiatives() {
         
         {/* Header Block */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 lg:mb-20 space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 font-mono text-[10px] tracking-widest uppercase">
-            <Cpu className="w-3.5 h-3.5 text-blue-400" />
-            CORE TECHNOLOGY SPECTRUM
-          </div>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight">
             {SERAPH_DATA.initiatives.title}
           </h2>
@@ -120,7 +116,6 @@ export default function Initiatives() {
               {/* Core Descriptions */}
               <div className="space-y-6">
                 <div>
-                  <span className="font-mono text-[9px] uppercase font-bold tracking-widest text-blue-400">INITIATIVE TARGET</span>
                   <h3 className="font-display text-2xl sm:text-3xl font-extrabold text-white mt-1">
                     {currentInitiative.name}
                   </h3>

@@ -77,10 +77,6 @@ export default function Contact() {
           {/* Left Side: Editorial context, email copies (5 Columns) */}
           <div className="lg:col-span-12 xl:col-span-5 space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 font-mono text-[10px] tracking-widest uppercase">
-                <MessageSquare className="w-3.5 h-3.5 text-blue-400" />
-                SECURE ENGAGEMENT HUB
-              </div>
               
               <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
                 {SERAPH_DATA.contact.title}

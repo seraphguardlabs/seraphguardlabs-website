@@ -61,10 +61,6 @@ export default function Principles() {
         
         {/* Title block */}
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16 lg:mb-20 space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 font-mono text-[10px] tracking-widest uppercase">
-            <Landmark className="w-3.5 h-3.5 text-blue-400" />
-            GOVERNING SCIENTIFIC ETHIC
-          </div>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white">
             {SERAPH_DATA.principles.title}
           </h2>
@@ -108,14 +104,54 @@ export default function Principles() {
                 </div>
 
                 {/* Aesthetic index tag */}
-                <div className="pt-6 border-t border-white/10 mt-6 flex items-center justify-between font-mono text-[9px] text-slate-500 select-none">
-                  <span>METRIC CODE 0{index + 1}</span>
+                <div className="pt-6 border-t border-white/10 mt-6 flex items-center justify-end font-mono text-[9px] text-slate-500 select-none">
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity text-blue-400">ACTIVE DIRECTIVE</span>
                 </div>
               </div>
             );
           })}
 
+        </div>
+
+        {/* Founder's Quote Card placed elegantly below the Bento Grid */}
+        <div className="mt-16 sm:mt-20 max-w-4xl mx-auto relative group">
+          {/* Ambient Background Glow behind Card */}
+          <div className="absolute -inset-4 bg-gradient-to-r from-blue-600/10 via-indigo-650/5 to-cyan-600/10 blur-2xl opacity-70 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-3xl" />
+          
+          <div className="relative p-8 sm:p-12 rounded-3xl bg-[#080d1e]/80 border border-white/10 backdrop-blur-xl shadow-2xl shadow-black/60 flex flex-col md:flex-row items-center gap-8 md:gap-10">
+            {/* Elegant Large Quotation Mark Icon */}
+            <div className="shrink-0 w-16 h-16 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 font-serif text-4xl select-none">
+              “
+            </div>
+
+            <div className="flex-1 space-y-6">
+              <p className="italic text-base sm:text-lg lg:text-xl text-blue-100/90 font-serif leading-relaxed">
+                {SERAPH_DATA.whyWeExist.quote}
+              </p>
+              
+              <div className="flex items-center gap-4 pt-4 border-t border-white/5">
+                <div className="shrink-0 w-12 h-12 rounded-full border border-white/15 shadow-inner flex items-center justify-center text-xs font-mono font-bold text-slate-400 select-none overflow-hidden relative bg-[#091024]">
+                  <img 
+                    src="/nevin.jpg" 
+                    alt="Nevin Robert" 
+                    width={48} 
+                    height={48} 
+                    loading="lazy" 
+                    className="w-full h-full object-cover hidden" 
+                    onLoad={(e) => {
+                      e.currentTarget.classList.remove('hidden');
+                      e.currentTarget.nextElementSibling?.classList.add('hidden');
+                    }} 
+                  />
+                  <span className="absolute inset-0 flex items-center justify-center">NR</span>
+                </div>
+                <div className="min-w-0">
+                  <div className="font-bold text-white text-sm sm:text-base truncate">Nevin Robert</div>
+                  <div className="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider mt-0.5 truncate">Founder & Director</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
